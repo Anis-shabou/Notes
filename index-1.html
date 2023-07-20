@@ -1,0 +1,36 @@
+<!DOCTYPE html><!-- Created By Anis-shabou-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/nots/style-1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Notes App</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">All Notes</div>
+        <div class="add-notes" onclick="addnote()" ><i class='bx bxs-edit icon'></i></div>
+    </nav>
+    <div class="container">
+        <form class="add">
+            <div class="form-control">
+             <label>Date</label>
+               <input type="datetime-local" name="date" autocomplete="off" id="date">
+                <label for="title">Title</label>
+                <input type="text" id="text" placeholder="Enter Your Title" autocomplete="off" name="title">
+              
+            </div>
+            <div class="form-control">
+                <label for="desc">Description</label><textarea type="text" id="desc" placeholder="Enter Your Desc"
+                    autocomplete="off" name="desc"></textarea>
+            </div>
+            <button class="submit" onclick="hide()"><i class='bx bx-plus' ></i>save notes</button>
+        </form>
+    </div>
+    <div class="notes">
+    </div>
+    <script src="/nots/index.js"></script>
+</body>
+</html>
